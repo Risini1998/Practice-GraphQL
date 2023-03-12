@@ -17,7 +17,7 @@ const Mutation = {
     userObj.create(newUser);
     return newUser;
   },
-  updateUser: async (root: any, args: { id: any; firstName: String; lastName: String; }, context: any, info: any) => {
+  updateUser: async (root: any, args: User, context: any, info: any) => {
     let userList = users;
     userList.update({
       id: args.id,

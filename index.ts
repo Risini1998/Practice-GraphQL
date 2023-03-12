@@ -2,7 +2,7 @@ import express, {Express, Request, Response} from 'express';
 import { ApolloServer, gql } from 'apollo-server-express';
 import {resolvers} from './resolvers';
 import { typeDefs } from './schema';
-
+  
 const app: Express = express();
 const port = 3000;
 
